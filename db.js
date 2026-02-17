@@ -7,13 +7,10 @@ import { existsSync } from 'fs';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
-// Load backend/.env explicitly (fallback to backend/backend/.env when present)
+// Load .env from project root
 const envPath = join(__dirname, '.env');
-const envPathNested = join(__dirname, 'backend', '.env');
 if (existsSync(envPath)) {
   dotenv.config({ path: envPath });
-} else if (existsSync(envPathNested)) {
-  dotenv.config({ path: envPathNested });
 }
 
 const supabaseUrl = process.env.SUPABASE_URL;

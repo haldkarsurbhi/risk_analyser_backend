@@ -1,7 +1,7 @@
 {
-  "name": "redthread-backend",
+  "name": "risk-analysis-techpack",
   "version": "1.0.0",
-  "description": "RedThread Apparel Tech Pack Analysis API",
+  "description": "Risk Analysis Tech Pack API",
   "main": "server.js",
   "type": "module",
   "scripts": {

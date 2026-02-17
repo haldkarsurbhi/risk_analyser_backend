@@ -1,6 +1,6 @@
 /**
  * Risk Analysis Tech Pack - Backend
- * Main server entry point. Port: 8000
+ * Main server entry point.
  */
 import express from 'express';
 import cors from 'cors';
@@ -8,7 +8,7 @@ import path from 'path';
 import fs from 'fs';
 import { fileURLToPath } from 'url';
 
-import uploadRoutes from './routes/uploadRoutes.js';
+import uploadRoutes from "./routes/uploadRoutes.js";
 import analysisRoutes from './routes/analysisRoutes.js';
 import techpackRoutes from './routes/techpack.js';
 import { supabase } from './db.js';
@@ -71,6 +71,8 @@ app.use((err, req, res, next) => {
   });
 });
 
-app.listen(PORT, () => console.log(`Server running on ${PORT}`));
+app.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`);
+});
 
 export default app;

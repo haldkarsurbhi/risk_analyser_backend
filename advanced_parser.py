@@ -28,7 +28,7 @@ OUTPUT_SECTIONS = ["collar", "sleeve", "cuff", "pocket", "front", "back", "assem
 # PATTERNS
 # -------------------------------------------------------------------------
 MEASUREMENT_REGEX = re.compile(
-    r"((\d+\s?/\s?\d+)|(\d+(\.\d+)?))\s?(mm|cm|\"|inch|”|')", re.IGNORECASE
+    r"((\d+\s?/\s?\d+)|(\d+(\.\d+)?))\s?(mm|cm|\"|inch|"|')", re.IGNORECASE
 )
 STITCH_REGEX = re.compile(
     r"\b(SNLS|DNCS|T/S|S/B|T\/S|S\/B|SPI|Box stitch|Lock stitch)\b", re.IGNORECASE
@@ -517,7 +517,7 @@ BASE_INFO_PATTERNS = [
     (re.compile(r"style\s*ref\.?\s*[:\-]\s*(.+)", re.IGNORECASE), "styleRef"),
     (re.compile(r"fit\s*[:\-]\s*(.+)", re.IGNORECASE), "fit"),
     (re.compile(r"season\s*[:\-]\s*(.+)", re.IGNORECASE), "season"),
-    (re.compile(r"modified\s*(?:on)?\s*[:\-]\s*(.+)", re.IGNORECASE), "modified"),
+    (re.compile(r"modified\s*(?:on)?\s*[:\-]\s*(.+)", re.IGNORECASE), "modified",
 ]
 
 

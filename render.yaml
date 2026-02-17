@@ -1,0 +1,11 @@
+# Render Blueprint - Backend Web Service
+# Root directory is project root (no backend subfolder)
+services:
+  - type: web
+    name: risk-analysis-backend
+    runtime: node
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: NODE_ENV
+        value: production

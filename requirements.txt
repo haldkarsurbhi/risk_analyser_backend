@@ -1,0 +1,11 @@
+pandas
+numpy
+scikit-learn
+matplotlib
+psycopg2-binary
+joblib
+python-dotenv
+pdfplumber
+opencv-python
+pytesseract
+Pillow
